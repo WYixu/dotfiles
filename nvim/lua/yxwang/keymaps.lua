@@ -53,3 +53,5 @@ map('n', '<leader>n', ':cnext<cr>')
 map('n', '<leader>N', ':cprevious<cr>')
 -- open Neorg index
 map('n', '<leader>oi', ':Neorg index<cr>')
+-- open Neorg journal today
+map('n', '<leader>oj', ':Neorg journal today<cr>')

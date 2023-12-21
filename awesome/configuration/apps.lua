@@ -14,7 +14,7 @@ return {
 		--- Default code editor
 		code_editor = "nvim",
 		--- Default web browser
-		web_browser = "vivaldi",
+		web_browser = "firefox",
 		--- Default file manager
 		file_manager = "krusader",
 		--- Default network manager

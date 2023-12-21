@@ -93,24 +93,6 @@ ruled.client.connect_signal("request::rules", function()
 		properties = { placement = helpers.client.centered_client_placement },
 	})
 
-	--- Music clients (usually a terminal running ncmpcpp)
-	ruled.client.append_rule({
-		rule_any = {
-			class = {
-				"music",
-			},
-			instance = {
-				"music",
-			},
-		},
-		properties = {
-			floating = true,
-			width = screen_width * 0.40,
-			height = screen_height * 0.42,
-			placement = helpers.client.centered_client_placement,
-		},
-	})
-
 	--- Image viewers
 	ruled.client.append_rule({
 		rule_any = {
@@ -131,7 +113,7 @@ ruled.client.connect_signal("request::rules", function()
   -- 1: Terminal
   -- 2: Browser
   ruled.client.append_rule({
-    rule = { class = "Vivaldi-stable" },
+    rule_any = { class = {"Vivaldi-stable", "firefox"} },
     properties = { tag = "2" }
   })
   -- 3: File
@@ -162,11 +144,7 @@ ruled.client.connect_signal("request::rules", function()
   })
   -- 9: Misc
   ruled.client.append_rule({
-    rule = { class = "Clash-verge" },
-    properties = { tag = "9" }
-  })
-  ruled.client.append_rule({
-    rule = { class = "qBittorrent" },
+    rule_any = { class = {"Clash-verge", "qBittorrent"} },
     properties = { tag = "9" }
   })
 end)

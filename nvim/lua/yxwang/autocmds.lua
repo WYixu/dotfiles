@@ -33,6 +33,12 @@ autocmd('FileType', {
   pattern = 'norg',
   group = 'FileTypeNorg',
   callback = function()
-    vim.opt.conceallevel = 2
+    vim.opt_local.conceallevel = 2
+    vim.opt_local.textwidth = 79
   end,
 })
+--autocmd('BufWritePre', {
+  --pattern = '*.norg',
+  --group = 'FileTypeNorg',
+  --command = "normal gggqG",
+--})

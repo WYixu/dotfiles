@@ -28,7 +28,7 @@ theme.icon_font = "Material Icons "
 --- ░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀
 
 --- Special
-theme.white = "#edeff0"
+theme.white = "#a7aab0"
 theme.darker_black = "#060809"
 theme.black = "#0c0e0f"
 theme.lighter_black = "#121415"
@@ -43,36 +43,36 @@ theme.light_grey = "#505253"
 theme.transparent = "#00000000"
 
 --- Black
-theme.color0 = "#232526"
-theme.color8 = "#2c2e2f"
+theme.color0 = "#101012"
+theme.color8 = "#101213"
 
 --- Red
-theme.color1 = "#df5b61"
-theme.color9 = "#e8646a"
+theme.color1 = "#de5d68"
+-- theme.color9 = "#de5d68"
 
 --- Green
-theme.color2 = "#78b892"
-theme.color10 = "#81c19b"
+-- theme.color2 = "#78b892"
+theme.color10 = "#8fb573"
 
 --- Yellow
-theme.color3 = "#de8f78"
-theme.color11 = "#e79881"
+theme.color3 = "#dbb671"
+theme.color11 = "#e2c792"
 
 --- Blue
-theme.color4 = "#6791c9"
-theme.color12 = "#709ad2"
+theme.color4 = "#57a5e5"
+-- theme.color12 = "#709ad2"
 
 --- Magenta
-theme.color5 = "#bc83e3"
-theme.color13 = "#c58cec"
+theme.color5 = "#79428a"
+theme.color13 = "#bb70d2"
 
 --- Cyan
-theme.color6 = "#67afc1"
-theme.color14 = "#70b8ca"
+theme.color6 = "#2b5d63"
+theme.color14 = "#51a8b3"
 
 --- White
-theme.color7 = "#e4e6e7"
-theme.color15 = "#f2f4f5"
+-- theme.color7 = "#e4e6e7"
+-- theme.color15 = "#f2f4f5"
 
 --- Background Colors
 theme.bg_normal = theme.black
@@ -89,7 +89,7 @@ theme.fg_minimize = theme.color0
 --- Accent colors
 function theme.random_accent_color()
 	local accents = {
-		theme.color9,
+		theme.color1,
 		theme.color10,
 		theme.color11,
 		theme.color12,
@@ -110,47 +110,14 @@ theme.press_event = "#ffffff" .. "15"
 theme.release_event = "#ffffff" .. "10"
 
 --- Widgets
-theme.widget_bg = "#1b1d1e"
+theme.widget_bg = "#2c2d31"
 
 --- Titlebars
 theme.titlebar_enabled = false
-theme.titlebar_bg = theme.black
-theme.titlebar_fg = theme.white
-
-local icon_dir = gfs.get_configuration_dir() .. "/icons/titlebar/"
-
--- Close Button
-theme.titlebar_close_button_normal = icon_dir .. "normal.svg"
-theme.titlebar_close_button_focus = icon_dir .. "close_focus.svg"
-theme.titlebar_close_button_normal_hover = icon_dir .. "close_focus_hover.svg"
-theme.titlebar_close_button_focus_hover = icon_dir .. "close_focus_hover.svg"
-
--- Minimize Button
-theme.titlebar_minimize_button_normal = icon_dir .. "normal.svg"
-theme.titlebar_minimize_button_focus = icon_dir .. "minimize_focus.svg"
-theme.titlebar_minimize_button_normal_hover = icon_dir .. "minimize_focus_hover.svg"
-theme.titlebar_minimize_button_focus_hover = icon_dir .. "minimize_focus_hover.svg"
-
--- Maximized Button (While Window is Maximized)
-theme.titlebar_maximized_button_normal_active = icon_dir .. "normal.svg"
-theme.titlebar_maximized_button_focus_active = icon_dir .. "maximized_focus.svg"
-theme.titlebar_maximized_button_normal_active_hover = icon_dir .. "maximized_focus_hover.svg"
-theme.titlebar_maximized_button_focus_active_hover = icon_dir .. "maximized_focus_hover.svg"
-
--- Maximized Button (While Window is not Maximized)
-theme.titlebar_maximized_button_normal_inactive = icon_dir .. "normal.svg"
-theme.titlebar_maximized_button_focus_inactive = icon_dir .. "maximized_focus.svg"
-theme.titlebar_maximized_button_normal_inactive_hover = icon_dir .. "maximized_focus_hover.svg"
-theme.titlebar_maximized_button_focus_inactive_hover = icon_dir .. "maximized_focus_hover.svg"
 
 --- Wibar
-theme.wibar_bg = "#101213"
+theme.wibar_bg = "#232326"
 theme.wibar_height = dpi(40)
-
---- Music
-theme.music_bg = theme.black
-theme.music_bg_accent = theme.darker_black
-theme.music_accent = theme.lighter_black
 
 --- ░█░█░▀█▀░░░█▀▀░█░░░█▀▀░█▄█░█▀▀░█▀█░▀█▀░█▀▀
 --- ░█░█░░█░░░░█▀▀░█░░░█▀▀░█░█░█▀▀░█░█░░█░░▀▀█
@@ -158,13 +125,9 @@ theme.music_accent = theme.lighter_black
 
 --- Wallpapers
 theme.wallpaper = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/background.jpg")
---- theme.wallpaper = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/yoru-dots.png")
---- theme.wallpaper = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/mountain.jpg")
---- theme.wallpaper = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/rocks.jpg")
 
 --- Image Assets
 theme.pfp = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/pfp.jpeg")
-theme.music = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/music.png")
 
 --- Layout
 --- You can use your own layout icons like this:
@@ -172,10 +135,6 @@ theme.layout_floating = icons.floating
 theme.layout_max = icons.max
 theme.layout_tile = icons.tile
 theme.layout_dwindle = icons.dwindle
-theme.layout_centered = icons.centered
-theme.layout_mstab = icons.mstab
-theme.layout_equalarea = icons.equalarea
-theme.layout_machi = icons.machi
 
 --- Icon Theme
 --- Define the icon theme for application icons. If not set then the icons
@@ -195,7 +154,7 @@ theme.border_color_maximized = theme.titlebar_bg
 theme.border_color_fullscreen = theme.titlebar_bg
 
 --- Corner Radius
-theme.border_radius = 0
+theme.border_radius = 4
 
 --- Edge snap
 theme.snap_bg = theme.color8
