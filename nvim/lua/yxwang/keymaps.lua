@@ -12,10 +12,10 @@ map('i', '<esc>', '')
 -- quick edit init.lua
 map('n', '<leader>ev', ':vsplit $MYVIMRC<cr>')
 -- faster moving
-map('n', 'H', '^')
-map('n', 'L', '$')
-map('n', 'J', '5jzz')
-map('n', 'K', '5kzz')
+map({'n', 'v'}, 'H', '^')
+map({'n', 'v'}, 'L', '$')
+map({'n', 'v'}, 'J', '5jzz')
+map({'n', 'v'}, 'K', '5kzz')
 -- recover joint
 map('n', '<leader>j', 'J')
 -- moving lines

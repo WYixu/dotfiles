@@ -4,7 +4,7 @@ if not status_ok then
 end
 
 color_scheme.setup {
-  style = 'deep',
+  style = 'warmer',
 }
 color_scheme.load()
 

@@ -16,9 +16,10 @@ local function autostart_apps()
 	--- Other stuff
 	helpers.run.run_once_grep("blueman-applet")
 	helpers.run.run_once_grep("nm-applet")
+	helpers.run.run_once_grep("fcitx5")
   helpers.run.run_once_grep("krusader")
-  helpers.run.run_once_grep("fcitx5")
   helpers.run.run_once_grep("qbittorrent")
+  helpers.run.run_once_grep("konversation")
   helpers.run.run_once_ps(
     "clash-verge",
     "/home/wyx/Downloads/clash-verge_1.4.3_amd64.AppImage"

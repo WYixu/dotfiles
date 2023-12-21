@@ -6,7 +6,23 @@ end
 neorg.setup ({
   load = {
     ["core.defaults"] = {},
-    ["core.concealer"] = {},
+    ["core.journal"] = {
+      config = {
+        strategy = "flat",
+      },
+    },
+    ["core.concealer"] = {
+      config = {
+        icon_preset = "diamond",
+        icons = {
+          todo = {
+            cancelled = false,
+            on_hold = false,
+            pending = false,
+          },
+        },
+      },
+    },
     ["core.dirman"] = {
       config = {
         workspaces = {

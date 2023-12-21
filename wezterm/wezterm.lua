@@ -12,7 +12,7 @@ local function font_with_fallback(name, params)
 	return wezterm.font_with_fallback(names, params)
 end
 
-local font_name = "JetBrains Mono Nerd Font"
+local font_name = "JetBrainsMono Nerd Font"
 
 return {
 	-- OpenGL for GPU acceleration, Software for CPU
@@ -49,65 +49,6 @@ return {
 	disable_default_key_bindings = true,
 	keys = {
 		{
-			key = [[\]],
-			mods = "CTRL|ALT",
-			action = wezterm.action({
-				SplitHorizontal = { domain = "CurrentPaneDomain" },
-			}),
-		},
-		{
-			key = [[\]],
-			mods = "CTRL",
-			action = wezterm.action({
-				SplitVertical = { domain = "CurrentPaneDomain" },
-			}),
-		},
-		{
-			key = "q",
-			mods = "CTRL",
-			action = wezterm.action({ CloseCurrentPane = { confirm = false } }),
-		},
-		{
-			key = "h",
-			mods = "CTRL|SHIFT",
-			action = wezterm.action({ ActivatePaneDirection = "Left" }),
-		},
-		{
-			key = "l",
-			mods = "CTRL|SHIFT",
-			action = wezterm.action({ ActivatePaneDirection = "Right" }),
-		},
-		{
-			key = "k",
-			mods = "CTRL|SHIFT",
-			action = wezterm.action({ ActivatePaneDirection = "Up" }),
-		},
-		{
-			key = "j",
-			mods = "CTRL|SHIFT",
-			action = wezterm.action({ ActivatePaneDirection = "Down" }),
-		},
-		{
-			key = "h",
-			mods = "CTRL|SHIFT|ALT",
-			action = wezterm.action({ AdjustPaneSize = { "Left", 1 } }),
-		},
-		{
-			key = "l",
-			mods = "CTRL|SHIFT|ALT",
-			action = wezterm.action({ AdjustPaneSize = { "Right", 1 } }),
-		},
-		{
-			key = "k",
-			mods = "CTRL|SHIFT|ALT",
-			action = wezterm.action({ AdjustPaneSize = { "Up", 1 } }),
-		},
-		{
-			key = "j",
-			mods = "CTRL|SHIFT|ALT",
-			action = wezterm.action({ AdjustPaneSize = { "Down", 1 } }),
-		}, -- standard copy/paste bindings
-		{
 			key = "x",
 			mods = "CTRL",
 			action = "ActivateCopyMode",
@@ -127,29 +68,18 @@ return {
 	-- Aesthetic Night Colorscheme
 	bold_brightens_ansi_colors = true,
 	colors = {
-		foreground = "#edeff0",
-		background = "#0c0e0f",
-		cursor_bg = "#edeff0",
-		cursor_fg = "#edeff0",
-		cursor_border = "#232526",
-		selection_fg = "#0c0e0f",
-		selection_bg = "#edeff0",
+		foreground = "#a7aab0",
+		background = "#232326",
+		cursor_bg = "#a7aab0",
+		cursor_fg = "#232326",
+		cursor_border = "#232326",
+		selection_fg = "#101012",
+		selection_bg = "#a7aab0",
 		scrollbar_thumb = "#edeff0",
 		split = "#090909",
-		ansi = { "#232526", "#df5b61", "#78b892", "#de8f78", "#6791c9", "#bc83e3", "#67afc1", "#e4e6e7" },
-		brights = { "#2c2e2f", "#e8646a", "#81c19b", "#e79881", "#709ad2", "#c58cec", "#70b8ca", "#f2f4f5" },
-		indexed = { [136] = "#edeff0" },
-		tab_bar = {
-			active_tab = {
-				bg_color = "#0c0e0f",
-				fg_color = "#edeff0",
-				italic = true,
-			},
-			inactive_tab = { bg_color = "#090909", fg_color = "#0c0e0f" },
-			inactive_tab_hover = { bg_color = "#151515", fg_color = "#090909" },
-			new_tab = { bg_color = "#151515", fg_color = "#090909" },
-			new_tab_hover = { bg_color = "#6791c9", fg_color = "#090909" },
-		},
+		ansi = { "#101012", "#833b3b", "#85b573", "#dbb671", "#57a5e5", "#79428a", "#2b5b63", "#818387" },
+		brights = { "#5a5b5e", "#de5d68", "#8fb573", "#e2c792", "#68aee8", "#bb70d2", "#51a8b3", "#a7aab0" },
+		indexed = { [136] = "#a7aab0" },
 	},
 
 	-- Padding
