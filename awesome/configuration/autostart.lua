@@ -5,9 +5,9 @@ local helpers = require("helpers")
 
 local function autostart_apps()
 	--- Compositor
-	helpers.run.check_if_running("picom", nil, function()
-		awful.spawn("picom --config " .. config_dir .. "configuration/picom.conf", false)
-	end)
+	-- helpers.run.check_if_running("picom", nil, function()
+		-- awful.spawn("picom --config " .. config_dir .. "configuration/picom.conf", false)
+	-- end)
 	--- Polkit Agent
 	helpers.run.run_once_ps(
 		"polkit-gnome-authentication-agent-1",
