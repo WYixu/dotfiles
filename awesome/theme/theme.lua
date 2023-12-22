@@ -48,10 +48,10 @@ theme.color8 = "#101213"
 
 --- Red
 theme.color1 = "#de5d68"
--- theme.color9 = "#de5d68"
+theme.color9 = "#de5d68"
 
 --- Green
--- theme.color2 = "#78b892"
+theme.color2 = "#78b892"
 theme.color10 = "#8fb573"
 
 --- Yellow
@@ -60,7 +60,7 @@ theme.color11 = "#e2c792"
 
 --- Blue
 theme.color4 = "#57a5e5"
--- theme.color12 = "#709ad2"
+theme.color12 = "#709ad2"
 
 --- Magenta
 theme.color5 = "#79428a"
@@ -71,8 +71,8 @@ theme.color6 = "#2b5d63"
 theme.color14 = "#51a8b3"
 
 --- White
--- theme.color7 = "#e4e6e7"
--- theme.color15 = "#f2f4f5"
+theme.color7 = "#e4e6e7"
+theme.color15 = "#f2f4f5"
 
 --- Background Colors
 theme.bg_normal = theme.black
@@ -104,7 +104,7 @@ end
 theme.accent = theme.color4
 
 --- UI events
-theme.leave_event = transparent
+theme.leave_event = theme.transparent
 theme.enter_event = "#ffffff" .. "10"
 theme.press_event = "#ffffff" .. "15"
 theme.release_event = "#ffffff" .. "10"
@@ -239,12 +239,5 @@ theme.dont_swallow_classname_list = {
 	"Google-chrome",
 	"Thunar",
 }
-
---- Layout Machi
-theme.machi_switcher_border_color = theme.lighter_black
-theme.machi_switcher_border_opacity = 0.25
-theme.machi_editor_border_color = theme.lighter_black
-theme.machi_editor_border_opacity = 0.25
-theme.machi_editor_active_opacity = 0.25
 
 return theme

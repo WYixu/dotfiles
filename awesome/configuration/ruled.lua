@@ -54,6 +54,7 @@ ruled.client.connect_signal("request::rules", function()
 		rule_any = {
 			instance = {
 				"Devtools", --- Firefox devtools
+        "Toplevel",
 			},
 			class = {
 				"Lxappearance",

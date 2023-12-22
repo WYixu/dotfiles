@@ -7,6 +7,7 @@
 pcall(require, "luarocks.loader")
 local gears = require("gears")
 local beautiful = require("beautiful")
+local awful = require("awful")
 
 --- ░▀█▀░█░█░█▀▀░█▄█░█▀▀
 --- ░░█░░█▀█░█▀▀░█░█░█▀▀
@@ -33,6 +34,8 @@ require("modules")
 --- ░▀▀▀░▀▀▀
 
 require("ui")
+
+-- awful.spawn('notify-send "' .. tostring(beautiful.xresources.get_dpi()) .. '"')
 
 --- ░█▀▀░█▀█░█▀▄░█▀▄░█▀█░█▀▀░█▀▀
 --- ░█░█░█▀█░█▀▄░█▀▄░█▀█░█░█░█▀▀
