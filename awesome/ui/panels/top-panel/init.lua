@@ -232,6 +232,21 @@ return function(s)
 	s.top_panel:struts({
 		top = s.top_panel.maximum_height,
 	})
+--- Remove top_panel on full screen
+	local function remove_top_panel(c)
+		if c.fullscreen or c.maximized then
+			c.screen.top_panel.visible = false
+		else
+			c.screen.top_panel.visible = true
+		end
+	end
+
+	--- Remove top_panel on full screen
+	local function add_top_panel(c)
+		if c.fullscreen or c.maximized then
+			c.screen.top_panel.visible = true
+		end
+	end
 
 	--- Hide bar when a splash widget is visible
 	awesome.connect_signal("widgets::splash::visibility", function(vis)

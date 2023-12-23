@@ -124,7 +124,7 @@ theme.wibar_height = dpi(40)
 --- ░▀▀▀░▀▀▀░░░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀░▀░░▀░░▀▀▀
 
 --- Wallpapers
-theme.wallpaper = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/background.jpg")
+theme.wallpaper = gears.surface.load_uncached("/home/wyx/Pictures/background.png")
 
 --- Image Assets
 theme.pfp = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/pfp.jpeg")
