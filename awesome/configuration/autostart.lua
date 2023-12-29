@@ -26,6 +26,7 @@ local function autostart_apps()
     "aria2c",
     "aria2c --enable-rpc"
   )
+  helpers.run.run_once_ps("udiskie", "udiskie --tray")
   helpers.run.run_once_grep("qbittorrent")
   helpers.run.run_once_grep("firefox")
   helpers.run.run_once_grep("krusader")

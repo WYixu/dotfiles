@@ -28,11 +28,11 @@ return {
 		{
 			italic = true,
 			intensity = "Bold",
-			font = font_with_fallback(font_name, { italic = true, bold = true }),
+			font = font_with_fallback(font_name, { italic = true, weight = "ExtraBold" }),
 		},
 		{
 			intensity = "Bold",
-			font = font_with_fallback(font_name, { bold = true }),
+			font = font_with_fallback(font_name, { weight = "ExtraBold" }),
 		},
 	},
 	warn_about_missing_glyphs = false,
