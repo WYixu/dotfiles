@@ -4,10 +4,10 @@ local config_dir = filesystem.get_configuration_dir()
 local helpers = require("helpers")
 
 local function autostart_apps()
-	--- Compositor
-	-- helpers.run.check_if_running("picom", nil, function()
-		-- awful.spawn("picom --config " .. config_dir .. "configuration/picom.conf", false)
-	-- end)
+	-- Compositor
+	helpers.run.check_if_running("picom", nil, function()
+		awful.spawn("picom --config " .. config_dir .. "configuration/picom.conf", false)
+	end)
 	--- Polkit Agent
 	helpers.run.run_once_ps(
 		"polkit-gnome-authentication-agent-1",
@@ -30,7 +30,7 @@ local function autostart_apps()
   helpers.run.run_once_grep("qbittorrent")
   helpers.run.run_once_grep("firefox")
   helpers.run.run_once_grep("krusader")
-  helpers.run.run_once_grep("konversation")
+  -- helpers.run.run_once_grep("konversation")
 end
 
 autostart_apps()
