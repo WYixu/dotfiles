@@ -46,6 +46,14 @@ lazy.setup({
     end
   },
 
+  -- Git integrations
+  {
+    'tpope/vim-fugitive',
+    -- config = function ()
+      -- require('fugitive').setup()
+    -- end
+  },
+
   -- File explorer
   {
     'nvim-tree/nvim-tree.lua',
