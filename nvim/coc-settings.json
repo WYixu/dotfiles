@@ -18,6 +18,12 @@
           }
         }
       }
+    },
+    "rust": {
+      "command": "rust-analyzer",
+      "filetypes": ["rust"],
+      "rootPatterns": ["Cargo.toml"]
     }
   }
 }
+
